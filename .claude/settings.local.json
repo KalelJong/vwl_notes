@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(kpsewhich ajnotes.sty)",
+      "PowerShell(kpsewhich ajnotes/env.tex)",
+      "PowerShell(kpsewhich --show-path=tex)",
+      "PowerShell(initexmf --update-fndb)",
+      "PowerShell(kpsewhich env.tex)",
+      "PowerShell(Remove-Item \"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\\\\main.aux\",\"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\\\\main.fdb_latexmk\",\"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\\\\main.fls\",\"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\\\\main.log\" -Force -ErrorAction SilentlyContinue; Set-Location \"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\"; latexmk -pdf -f -interaction=nonstopmode -auxdir=.aux main.tex; Write-Output \"EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\"; latexmk -pdf -f -interaction=nonstopmode -auxdir=.aux main.tex; Write-Output \"EXIT=$LASTEXITCODE\")",
+      "PowerShell(miktex --verbose packages install pdflscape 2>&1 | Select-Object -Last 15; Write-Output \"EXIT=$LASTEXITCODE\")",
+      "PowerShell(initexmf --show-config-value=[MPM]AutoInstall)",
+      "PowerShell(miktex packages update-package-database 2>&1 | Select-Object -Last 5; Write-Output \"EXIT=$LASTEXITCODE\"; miktex packages install pdflscape 2>&1 | Select-Object -Last 10; Write-Output \"EXIT2=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\"; latexmk -pdf -f -interaction=nonstopmode \"-auxdir=.aux\" main.tex 2>&1 | Select-String -Pattern \"Running 'pdflatex|Nothing to do|Latexmk:|^!|Error\" | Select-Object -First 25; Write-Output \"EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\"; Remove-Item \".aux\",\".fdb_latexmk\",\".log\" -Force; latexmk -pdf -f -interaction=nonstopmode \"-auxdir=.aux\" main.tex 2>&1 | Select-String -Pattern \"Running 'pdflatex|Latexmk:|^!|not found|Fatal\" | Select-Object -First 30; Write-Output \"EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\kalel\\\\Desktop\\\\uzh\\\\latex\\\\volkswirtschaftslehre\\\\notes\"; latexmk -pdf -interaction=nonstopmode \"-auxdir=.aux\" main.tex 2>&1 | Select-Object -Last 8; Write-Output \"EXIT=$LASTEXITCODE\"; Write-Output \"--- layout ---\"; Get-ChildItem -Force | Select-Object Name; Write-Output \"--- .aux ---\"; Get-ChildItem .aux -Force | Select-Object Name)"
+    ]
+  }
+}
