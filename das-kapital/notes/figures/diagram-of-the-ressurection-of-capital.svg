@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="diagram-of-the-ressurection-of-capital.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       id="arrow"
+       orient="auto-start-reverse"
+       markerUnits="userSpaceOnUse"
+       markerWidth="4.5"
+       markerHeight="4.5"
+       refX="3.6"
+       refY="2.25">
+      <path
+         d="M0,0 L4.5,2.25 L0,4.5 L1.2,2.25 Z"
+         fill="#000000"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrow-0"
+       orient="auto-start-reverse"
+       markerUnits="userSpaceOnUse"
+       markerWidth="4.5"
+       markerHeight="4.5"
+       refX="3.5999999"
+       refY="2.25">
+      <path
+         d="M 0,0 4.5,2.25 0,4.5 1.2,2.25 Z"
+         fill="#000000"
+         id="path1-9" />
+    </marker>
+    <marker
+       id="marker2"
+       orient="auto-start-reverse"
+       markerUnits="userSpaceOnUse"
+       markerWidth="4.5"
+       markerHeight="4.5"
+       refX="3.5999999"
+       refY="2.25">
+      <path
+         d="M 0,0 4.5,2.25 0,4.5 1.2,2.25 Z"
+         fill="#000000"
+         id="path2-4" />
+    </marker>
+    <marker
+       id="arrow-5"
+       orient="auto-start-reverse"
+       markerUnits="userSpaceOnUse"
+       markerWidth="4.5"
+       markerHeight="4.5"
+       refX="3.5999999"
+       refY="2.25">
+      <path
+         d="M 0,0 4.5,2.25 0,4.5 1.2,2.25 Z"
+         fill="#000000"
+         id="path1-5" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="282.58988"
+     inkscape:cy="337.39824"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g11"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <!-- =========================================================
+       Palette of ready-made objects, parked BELOW the page so it
+       never appears in the exported PDF (export uses the page area
+       only). Copy one onto the page, or copy an arrow and use
+       Paste Style (Ctrl+Shift+V) to put arrowheads on your lines.
+       ========================================================= -->
+  <g
+     inkscape:label="palette (off-page, not exported)"
+     id="g11">
+    <!-- NB: keep this palette free of TEXT objects. Off-page graphics are
+         clipped out of the exported PDF, but Inkscape's LaTeX export writes
+         every text object into the .pdf_tex regardless of position, so any text
+         here would leak into the document. -->
+    <!-- arrow (copy this and use Paste Style to arrow a line) -->
+    <path
+       d="M10,144 L70,144"
+       fill="none"
+       stroke="#000"
+       stroke-width="0.7"
+       marker-end="url(#arrow)"
+       id="path2" />
+    <path
+       d="M 64.822917,141.68542 H 124.82292"
+       fill="none"
+       stroke="#000000"
+       stroke-width="0.7"
+       marker-end="url(#arrow-5)"
+       id="path2-7"
+       style="marker-end:url(#arrow-5)" />
+    <!-- double-headed arrow -->
+    <!-- 2D axes, first quadrant (both arms 55 long) -->
+    <g
+       inkscape:label="axes-2d-quadrant"
+       id="g5">
+      <path
+         d="M15,215 L70,215"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path4" />
+      <path
+         d="M15,215 L15,160"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path5" />
+    </g>
+    <!-- 2D axes, full: lines extend equally into the negative side, arrowhead
+         only on the positive (right / top) end (origin at 122,187; arms 42) -->
+    <g
+       inkscape:label="axes-2d-full"
+       id="g7">
+      <path
+         d="M80,187 L164,187"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path6" />
+      <path
+         d="M122,229 L122,145"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path7" />
+    </g>
+    <!-- 3D axes, oblique (origin 200,205; all three arms 40 long) -->
+    <g
+       inkscape:label="axes-3d"
+       id="g10">
+      <path
+         d="M200,205 L240,205"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path8" />
+      <path
+         d="M200,205 L200,165"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path9" />
+      <path
+         d="M200,205 L171.7,233.3"
+         fill="none"
+         stroke="#000"
+         stroke-width="0.7"
+         marker-end="url(#arrow)"
+         id="path10" />
+    </g>
+    <g
+       inkscape:label="axes-2d-quadrant"
+       id="g5-8"
+       transform="translate(-10.983245,-155.77568)">
+      <path
+         d="M 15,215 H 70"
+         fill="none"
+         stroke="#000000"
+         stroke-width="0.7"
+         marker-end="url(#arrow-0)"
+         id="path4-2"
+         style="marker-end:url(#arrow-0)" />
+      <path
+         d="M 15,215 V 160"
+         fill="none"
+         stroke="#000000"
+         stroke-width="0.7"
+         marker-end="url(#arrow-0)"
+         id="path5-4"
+         style="marker-end:url(#arrow-0)" />
+    </g>
+    <path
+       d="M 43.102788,9.9625873 6.3837,57.456813"
+       fill="none"
+       stroke="#000000"
+       stroke-width="0.7"
+       marker-start="url(#arrow)"
+       marker-end="url(#arrow)"
+       id="path3"
+       sodipodi:nodetypes="cc"
+       style="fill:#5026fa;fill-opacity:1;stroke:#db74b8;stroke-opacity:1" />
+  </g>
+</svg>
