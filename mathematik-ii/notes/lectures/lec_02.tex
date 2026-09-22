@@ -1,0 +1,72 @@
+% !TEX root = ../main.tex
+\lecture{2}{2026-09-21}{Woche 2}
+
+\textbf{Vorlesungsfolien} \url{https://moodle-app2.let.ethz.ch/course/section.php?id=261070}
+
+\subsection{Vektoren}
+\textbf{Definition} \textit{Vektoren} sind Elemente aus n-Dimensionalen Mengen.
+\begin{theorem}
+    $\textbf{x}$ oder $ \vec{x} = $
+    $\begin{pmatrix}
+        x_1 \\
+        \vdots\\ 
+        x_n
+    \end{pmatrix}$
+    $\in \mathbb{R}^n$
+\end{theorem}
+
+\subsubsection{Skalare Multiplikation}
+
+Eindimensionale Zahl multipliziert Vektor 
+
+\begin{theorem}
+    \textbf{$\alpha$x} oder  $\vec{\alpha x} = $
+    $\begin{pmatrix}
+       \alpha x_1 \\
+        \vdots\\ 
+       \alpha x_n
+    \end{pmatrix}$
+    $\in \mathbb{R}^n$
+\end{theorem}
+
+Laenge oder \textit{euklidische}\textbf{Norm} von $x \in \mathbb{R}^n ist$
+
+
+\subsubsection{Umgebung}
+
+\begin{theorem}
+    Sei \textbf{x}  $\in \mathbb{R}^n$, $\epsilon \in \mathbb{R}, \epsilon > 0$ Dann ist 
+    \begin{equation}
+        U(\textbf{x}, \epsilon) = \left\{\textbf{y} \in \mathbb{R}^n \middle| \lVert\textbf{y}-\textbf{x}\rVert = \sqrt{\sum_{i=1}^{n} (y_i - x_i)^2} < \epsilon\right\}
+   \end{equation}   
+\end{theorem}
+
+Beschreibt alle Abstandsvektoren mit maximaler länge $\epsilon$ von X  
+\textbf{$\epsilon$-Umgebungen sind immer Konvex}
+
+
+\subsubsection{Konvexe Mengen}
+
+Jede Verbindungslinie in der Umgebung einer konvexen Menge muss notwendig aus Punkten, die zur Menge gehoeren, bestehen.
+
+Punkte auf Verbindungslinie von Y und X mit $ 0 \le \alpha \le 1$ beschrieben. Sonst fuer $\alpha$ ausserhalb dieser schranke besteht eine allgemeine Gerade
+\begin{theorem}
+    Der Durchschnitt $P = H_1 \cap H_2 \cap \dots \cap H_n$ konvexer Mengen ist immer Konvex
+\end{theorem}
+
+\begin{theorem}
+    Das Komplement $P = H_1 \setminus H_2 \setminus \dots \setminus H_n$ ist \textbf{nicht} immer konvex.
+\end{theorem}
+
+
+\subsubsection{Innere, Aeusere, Randpunkte}
+
+\textbf{Definition} fuer einen Innerenpunkt existiert immer eine $\epsilon$-Umgebung 
+
+\subsubsection{Offene und abgeschlossene Mengen}
+
+Offen gilt wenn eine Menge so definiert ist, dass seine Randpunkte die Definition nicht erfuellen A = (1,4) beschreibt alles zwischen 1 und 4 ohne sie selber, also offen.
+Gleich bei $\epsilon$-Umgebungen, worin die Laenge \textbf{kleiner} als $\epsilon$ sind. 
+
+Allgemein Abgeschlossene, nicht offene mengen, ist mindestens ein Randpunkt in der Menge drin. Unten beschraenkt, gibt Objekt der kleiner ist als alle Objekten der Mengen. Oben beschraenkt, es gibt Element ausserhalb der Menge, der groesser ist als alle in der Menge. 
+Wenn oben und unten beschraenkt dann ist die Menge \textbf{kompakt}
