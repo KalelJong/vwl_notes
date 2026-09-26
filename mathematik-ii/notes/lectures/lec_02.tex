@@ -45,11 +45,31 @@ Beschreibt alle Abstandsvektoren mit maximaler länge $\epsilon$ von X
 \textbf{$\epsilon$-Umgebungen sind immer Konvex}
 
 
-\subsubsection{Konvexe Mengen}
+\subsection{Konvexe Mengen}
 
-Jede Verbindungslinie in der Umgebung einer konvexen Menge muss notwendig aus Punkten, die zur Menge gehoeren, bestehen.
+Wenn jeder Punkt einer Verbindungslinie zwischen zwei Punkte einer Menge auch in zur Menge gehören, ist sie dann konvex.
 
+\subsubsection{Konvexe Kombination}
 Punkte auf Verbindungslinie von Y und X mit $ 0 \le \alpha \le 1$ beschrieben. Sonst fuer $\alpha$ ausserhalb dieser schranke besteht eine allgemeine Gerade
+
+\begin{theorem}
+    Für $\vec{x}, \vec{y} \in \mathbb{R}^n$ und $0 \le \alpha \le 1$ beschreibt der resultierende Vektor die Differenz [Abstand] von $\vec{y}$ zu $\vec{x}$ in Abhängigkeit von $\alpha$.
+    \begin{equation}
+        \label{eq:kon_komb}
+        a = \alpha \vec{x} + (1-\alpha) \vec{y} = \vec{y} + \alpha (\textbf{x} - \textbf{y}) = \vec{y} + \alpha (\vec{yx})
+    \end{equation}
+
+    Bei $\alpha = 0$ ist $ \vec{a} = \vec{y} $ und $\alpha = 1 \implies \vec{a} = \vec{x}$
+\end{theorem}
+
+\begin{definition} [Konvexe Menge]
+    Formell gilt für eine konvexe Menge.
+        \begin{equation}
+        a = \alpha \vec{x} + (1-\alpha) \vec{y} = \vec{y} + \alpha (\textbf{x} - \textbf{y}) = \vec{y} + \alpha (\vec{yx}) \in \mathbb{A}
+    \end{equation}
+    Also wenn jeder beliebigen Punkt zwischen Y und X (beschrieben durch $\alpha$) auch in der Menge liegt.
+\end{definition}
+
 \begin{theorem}
     Der Durchschnitt $P = H_1 \cap H_2 \cap \dots \cap H_n$ konvexer Mengen ist immer Konvex
 \end{theorem}
