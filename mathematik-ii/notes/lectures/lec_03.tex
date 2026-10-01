@@ -1,0 +1,56 @@
+% !TEX root = ../main.tex
+\pagebreak
+\lecture{3}{2026-09-28}{Woche 3 Relation \& Funktion}
+\subsection{Relation}
+\begin{definition}
+    [\textit{binäre} Relation]\footnote{weil zwischen ZWEI Mengen} die Zuweisung von Elementen einer Menge $\mathbb{D}$ zu einer anderen Menge Z, wobei \textbf{keine} Stetigkeit oder Eindeutigkeit notwendig ist.
+    \begin{equation}
+        \mathbb{A} = \left\{(x,y) \in \mathbb{D} \times Z \mid \textit{bedingung}\right\} \quad\text{oder Tupel}\quad (\mathbb{D}, Z, \textbf{A})
+    \end{equation}
+    Aus karthesischem Produkt werden Tupel ausgewählt, die die Bedingung erfüllen. Relationen sind Teilmengen $A \in \mathbb{D} \times Z$
+\end{definition}
+
+\begin{definition}
+    [Umkehrrelation] kehrung der Mengen und der Bedingung. Sodass:
+    \begin{equation}
+        R^{-1} \text{ von } (D,Z,R) = (Z,D,R^{-1}) \quad \text{oder} \quad R^{-1} = \{(x,y) \in A_1 \times A_4 \mid y > x\}
+    \end{equation}
+\end{definition}
+
+\subsection{Funktion und Eigenschaften}
+\begin{definition}
+    [Funktion] Relationen, worin elementen einer Menge \textbf{D}  einem einzelnen Element einer anderen Menge \textbf{F} zugewiesen werden. $x \in D$ genau ein $y \in Z$. \textit{D} ist die \textbf{Definitionsmenge} und \textit{Z} ist \textbf{Zielmenge}
+    \begin{equation}
+        f: \textit{D} \rightarrow Z 
+    \end{equation}
+\end{definition}
+
+\begin{definition}
+    [Graph einer Funktion] Menge aller Punkten, die die Funktionsvorschrift erfüllen.
+\end{definition}
+
+Graph von Funktionen mit verschiedener D und Z können gleich aussehen. Die Funktionsvorschrift ist also entscheidend für die Unterscheidung. Z.B. eine Funktion dessen 
+
+\begin{definition}
+    [Surjetivität] wenn jedes Element der Zielmenge von elementen der Definitionsmenge erreicht wird. Kein ELement der Z wird übersprungen 
+    \begin{equation}
+        Z = f(D)
+    \end{equation}
+\end{definition}
+
+\begin{definition}
+    [Interjektivität] wenn alle y aus Z einem einzigen x aus D zugewiesen werden und umgekehrt. ALso für $x,x' \in D$
+    \begin{equation}
+        x \neq x' \implies f(x) \neq f(x')
+    \end{equation} 
+\end{definition}
+
+Die Eigenschaften \textit{\textbf{Surjektivität}} und \textit{\textbf{Interjektivität}} sind von einander unabhängig. Wenn beide zutreffen ist eine Funktion \textit{\textbf{Bijektiv}}
+
+\begin{definition}
+    [Komposition] oder Verschachtelung von Funktionen, wobei die Definitionsmenge einer Funktion $f$ gleich der Zielmenge einer Funktion $q$ ist. Schreibweise
+    \begin{equation}
+        (f \dotfill q) = f(q(x)) 
+    \end{equation} 
+
+\end{definition}

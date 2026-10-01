@@ -1,0 +1,49 @@
+% !TEX root = ../main.tex
+\lecture{3}{2026-09-28}{Woche 3 Time Value of Money}
+
+\section{Time Value of Money}
+
+\subsection{Einführung}
+
+\begin{definition}
+    [Compound Interest oder Zinseszins] exponential funktion aus einer Anfangsmenge oder Present Value (PV) und wiederholter Zinsatz (k) auf neuer Wert der letzten Periode über eine Periodendauer (t) resultiert in Future Value (FV):
+    \begin{equation}
+        f(x) = G * Z^n
+    \end{equation}
+\end{definition}
+\textbf{Fragen}
+\begin{itemize}
+    \item Wie wächst ein PV mit Zinsatz k in Periode t?
+    \item Welcher PV muss heute investieren werden um mit k einen gewissen FV zu erreichen?
+    \item Wie vie
+\end{itemize}
+\textbf{Gründe}
+\begin{itemize}
+    \item Geld kann angelegt/investiert werden
+    \item Zukünftige Aufwertung ist unsicher
+    \item Inflation mindert die Kaufkraft
+\end{itemize}
+
+\begin{definition}
+    [\textit{diskrete} Unterjährige Verzinsung] wenn innerhalb einer Periode t eine wiederholte Verzinsung stattfindet.
+    \begin{equation}
+        FV = PV * (1+\frac{R}{m})^{t*m}
+    \end{equation} 
+    Wobei $R:$ unterjähriger Zinssatz oder Gesamtzinssatz, $m$: Anzahl Verzinsungen im Jahr.
+\end{definition}
+
+\begin{definition}
+    [\textit{stetige} Verzinsung] form 
+    \begin{equation}
+        FV = K_0 \cdot e^{r_c \cdot T}
+    \end{equation}
+\end{definition}    
+
+\begin{definition}
+    [Kapitalwertmethode oder Net Present Value] 
+    \begin{equation}
+        NPV = - I_0 + \sum_{t=1}^{T}[\frac{CF_t}{(1 + k)^t}]
+    \end{equation}
+\end{definition}
+
+Barwert oder NPV repräsentiert der Wert eines zinsfälligen Investitionsprojekts in einer 

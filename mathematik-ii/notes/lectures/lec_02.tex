@@ -30,24 +30,29 @@ Eindimensionale Zahl multipliziert Vektor
 \end{theorem}
 
 Laenge oder \textit{euklidische}\textbf{Norm} von $x \in \mathbb{R}^n ist$
+\pagebreak
 
-
-\subsubsection{Umgebung}
+\subsubsection{$\epsilon$-Umgebung}
 
 \begin{theorem}
     Sei \textbf{x}  $\in \mathbb{R}^n$, $\epsilon \in \mathbb{R}, \epsilon > 0$ Dann ist 
     \begin{equation}
         U(\textbf{x}, \epsilon) = \left\{\textbf{y} \in \mathbb{R}^n \middle| \lVert\textbf{y}-\textbf{x}\rVert = \sqrt{\sum_{i=1}^{n} (y_i - x_i)^2} < \epsilon\right\}
    \end{equation}   
+   Beschreibt alle Abstandsvektoren mit maximaler Länge $\epsilon$ von $X$. 
 \end{theorem}
 
-Beschreibt alle Abstandsvektoren mit maximaler länge $\epsilon$ von X  
-\textbf{$\epsilon$-Umgebungen sind immer Konvex}
+\textbf{$\epsilon$-Umgebungen sind immer konvex.}
 
+\begin{center}
+    \includegraphics[width=\linewidth]{figures/epsilon_umgebung.png}
+\end{center}
 
 \subsection{Konvexe Mengen}
-
-Wenn jeder Punkt einer Verbindungslinie zwischen zwei Punkte einer Menge auch in zur Menge gehören, ist sie dann konvex.
+\begin{definition}
+    [Konvexe Menge] Wenn jeder Punkt einer Verbindungslinie zwischen zwei Punkte einer Menge auch in zur Menge gehören, ist sie dann konvex.
+    
+\end{definition}
 
 \subsubsection{Konvexe Kombination}
 Punkte auf Verbindungslinie von Y und X mit $ 0 \le \alpha \le 1$ beschrieben. Sonst fuer $\alpha$ ausserhalb dieser schranke besteht eine allgemeine Gerade
@@ -90,3 +95,20 @@ Gleich bei $\epsilon$-Umgebungen, worin die Laenge \textbf{kleiner} als $\epsilo
 
 Allgemein Abgeschlossene, nicht offene mengen, ist mindestens ein Randpunkt in der Menge drin. Unten beschraenkt, gibt Objekt der kleiner ist als alle Objekten der Mengen. Oben beschraenkt, es gibt Element ausserhalb der Menge, der groesser ist als alle in der Menge. 
 Wenn oben und unten beschraenkt dann ist die Menge \textbf{kompakt}
+
+\subsection{Supremum, Infimum, Maximum, Minimum}
+
+\begin{definition}
+   [Infimum] Ist $ A \subseteq \mathbb{R}$ nach unten beschraenkt, heisst die grösste untere Schranke \textit{inf}A. Oder Element zu dem alle anderen grösser oder gleich sind.
+\end{definition}
+
+\begin{definition}
+    [Minimum] wenn eine Menge ihr \textit{Infimum} beinhaltet, ist es ihr \textit{min}.
+    \begin{equation}
+         infA \subseteq A \implies minA = infA
+    \end{equation}
+\end{definition}
+
+\begin{definition}
+    [Supremum und Maximum] gleiche Logik für obere Schranke und grösstes Element.
+\end{definition}
