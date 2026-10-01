@@ -7,3 +7,91 @@
     [Big Daten] Volume (Grosse Verarbeitungs, Speicherkapazität), Variety (heterogene Daten), Velocity 
 \end{definition}
 
+\subsection{Encoding}
+
+UNICODE: Encoding (Semantik mapping binär zu Zeichen) mit maximal 32-Bit (oder $\sum_{n=0}^{32}2^n$)
+
+\subsection{Konversion}
+
+Bit -(:8)-> Byte -(1024)-> KByte -()
+
+
+\subsection{Datenmodellierung}
+
+\begin{definition}
+    [ERM] Entity Relationship Management. Relationale Datenbanken, die strukturierte Daten in Entitäten (Tabellen) mit einander verknüpfen.
+\end{definition}
+
+\subsubsection{Grundsätze}
+\begin{itemize}
+    \item Atomar
+    \item Eindeutig oder nicht Redundant
+    \item 
+\end{itemize}
+\subsubsection{Beziehungen}
+
+\begin{itemize}
+    \item 1-n
+    \subitem FK bei n
+    \item 1-1
+    \subitem entweder oder
+    \item N-M 
+    \subitem zwischen tabelle Lookup tabelle   
+\end{itemize}
+
+\subsubsection{SQL}
+
+\textbf{Create Table}
+\begin{verbatim}
+    CREATE TABLE table_name (
+        Id INTEGER PRIMARY KEY, 
+        Name VARCHAR(255) NOT NULL
+    );
+\end{verbatim}
+
+\textbf{Queries}
+
+\begin{verbatim}
+    SELECT * FROM table_name
+    WHERE table_name.column_1 = "xxxx" AND
+    table_name.column_2 = "yyyÿ:"
+    ORDER BY table_name.column_2 ASC/DESC;
+\end{verbatim}
+
+\section{PageRank}
+\begin{definition}
+    [Page Rank]
+    Innovation der Google Suchmaschine, Webseiten nach einheitlichem Kriterien bewerten und nach Relevanz vergleichen. Dämpfungsfaktor (\textit{d}) 
+    \begin{equation}
+        PageRank_x = (1-d) + d(\sum_{i \mid i \rightarrow x}^{x}\frac{PageRank_x}{Anzahl_{outgoinglinks_i}})
+    \end{equation}
+\end{definition}
+
+\subsection{Precision/Recall}
+
+\begin{definition}
+    [Precision] Von den Gefundenen wie viele Relevanten. 
+    \begin{equation}
+        \frac{|R \cap G |}{|G|} = 1
+    \end{equation}
+    Alle Gefundenen Dokumenten (G) sind alle relevant (R). Bei < 1 wurden mehr gefunden als relevant 
+\end{definition}
+
+\begin{definition}
+    [Recall] Von den Relevanten wie viele Gefunden.
+      \begin{equation}
+          \frac{|G \cap R |}{|R|} = 1
+      \end{equation}
+       Alle relevante Dokumenten wurden gefunden aber nicht unbedingt alle gefunden sind relevant.
+\end{definition}
+
+
+
+\subsection{Aufgabentypen}
+\begin{itemize}
+    \item Kovertieren Bin -> Dec  oder Dec -> Bin
+    \item KOnvertieren Bin -> ASCII oder ASCII->Bin
+    \item Speicherplatz eines Dokuments berechnen anhand UNICODE, Seiten, Zeilen, Zeichen
+    \item PageRank eines netzwerks mit neuem Dokument bewerten
+    \item Recall udn Precision einer Suchmaschine Bewerten
+\end{itemize}
