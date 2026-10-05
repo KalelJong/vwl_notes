@@ -1,5 +1,5 @@
 % !TEX root = ../main.tex
-\lecture{3}{2026-10-01}{Woche 3 Paretto und Präferenzen}
+\lecture{3}{2026-10-01}{Paretto und Präferenzen}
 
 \section{Modellökonomien}
 
@@ -43,19 +43,21 @@ Bei gegebnem Wahl zweier oder mehrere Güterbündel ($X_n$), kann formell eine R
 
 \footnote{Es kann nicht quantifiziert werden, nur Kategorisiert. Güter sind nicht reduzierbar auf gleiche und quantifizierbare Grössen}
 
-Annahmen 
-Vollständigkeit
-Transitivität
-Stetigkeit
-Nichtsättigung
-Konvexität
+\textbf{Annahmen}
+\begin{itemize}
+    \item Vollständigkeit
+    \item Transitivität
+    \item Stetigkeit
+    \item Nichtsättigung
+    \item Konvexität
+\end{itemize}
 
 
-\section{Angewandte Mikroökonomie}
+\subsection{Angewandte Mikroökonomie}
 
 Empirische Forschung und beobachtung. \footnote{Die Empirie ist aber...}
 
-\subsection{Matching-Market}
+\subsubsection{Matching-Market}
 \textbf{Beispiele}
 \begin{itemize}
     \item Partnersuche
@@ -76,3 +78,71 @@ Empirische Forschung und beobachtung. \footnote{Die Empirie ist aber...}
     \item Wie verändern sich diese in Relation zum Angebot (Potenzielle Partner)
     \item Zufällige Veränderung des Partnerpools, sollten Zufällige ver
 \end{itemize}
+
+\section{Konsument und Nachfrage}
+
+
+\subsection{Budgetbeschränkung}
+
+\subsubsection{Voraussetzungen}
+\begin{itemize}
+    \item montliches Einkommen
+    \item Zwei Waren Wohnraum W ($m^2$ / Monat) und Fertiggerichte F kg/monat
+    \item Preise für Wohnraum $P_w$ und $P_f$
+    \item \textit{Preisnehmerverhalten} keinen individuellen Einfluss auf Preise
+    \item Güterbündel Tüpel $X_n = (W,F)$ \footnote{Alle wichtige Fragen scheinen im Hintergrund zu sein: Warum beträgt Einkommen X so viel, wieso kostet wohnraum x mal mehr als F, was ist ihnen überhaupt Gemeinsam für einen Quantitativen Vergleich }
+\end{itemize}
+
+\subsubsection{Budgetgerade}
+\begin{definition}
+    [Budgetbedingung] Was eine Person sich leisten \textit{kann}. (W,F) kostet $P_wW + P_fF$
+    \begin{equation}
+         P_wW+P_fF \le M
+    \end{equation} wobei M = Budget
+\end{definition}
+
+\begin{definition}
+    [Budgetgerade]
+ \textbf{Bei voller Ausgabe vom Budget}
+
+    \begin{equation}
+        P_wW + P_fF = M
+    \end{equation}
+    \textbf{Umgeformt Budgetgerade}
+    \begin{equation}
+        F = \frac{M}{P_f} - \frac{P_w}{P_f}W
+    \end{equation}
+\end{definition}
+Stellt alle Konvexkombinationen von W und F dar, worin Preis von F und Preis von W zusammen M ergeben. Randpunkte der Menge, wo F für W ZeroSum ausgetauscht werden müssen um im Budget zu passen. Randpunkte nicht unbedingt optimal, weil \textbf{Präfenzen} noch abstrahiert.
+
+\subsubsection{Einseitige Preisänderungen}
+Veränderung der Budget gerade bei Verändernden Preisen von Güter im Bündel.
+\begin{itemize}
+    \item Bei erhöhung von $P_wW$ und gleichbleibendem M, reduziert sich die Anzahl möglicher Konvexkombinationen
+    \item Gleich bei $P_fF$
+    \item Bei einer reduktion von M, wirkt sich auf Kurve so aus, als wären $P_f$ und $P_w$ gestiegen. Allgemeine reduktion der möglichen Kombinationen, steigerung der Punkte ausserhalb der Menge.
+\end{itemize}
+
+\subsubsection{Simultane Änderungen}
+Änderungen können, sich gegenseitig neutralisieren. So: 
+\begin{itemize}
+    \item Verdopplung der Preise gleich Halbierung des Budgets
+    \item So bei Verdopplung des Budgets und Verdopplung der Preise $\implies$ Gleiche Mengemächtigkeit vor und nach.
+\end{itemize}
+
+\subsection{Präferenzen und Nutzenfunktion }
+\begin{definition}
+    [Nutzenfunktion U] von den Tupel innerhalb der leistbaren Menge. Welcher ist optimal, gegeben Präferenzen und Rationalität.
+    \begin{equation}
+        U: \mathcal{X} \rightarrow \mathbb{R} \quad U(W,F) = WF
+    \end{equation}
+    Gegeben Güterbündel ($\mathcal{X}$) wird eine Reele Zahl zugeordnet, die den Nutzen messen soll.
+    Interpretation ist \textit{\textbf{Ordinal}} also qualitativ, ob grösser oder kleiner Nutzen, \textbf{nicht} quantitativ $X_1 = 2 X_2$ \footnote{Also einfach ignorieren, dass die Resultate quantitativ vergleichbar sind als Ausgang von dem Widerspruch, dass Nützlichkeit verschiedener Dinge sich nicht quantifizierbar vergleichen lässt?}
+\end{definition}
+
+\subsubsection{Höhenlinien}
+Nutzen ist eine multidimensionalen Funktion. Wobei n gleich der Anzahl Güter im Bündel ist.
+\begin{equation}
+    U: \mathbb{R} \rightarrow \mathbb{R}^{n}
+\end{equation}
+\subsection{Angewandte Mikroökonomie II}
