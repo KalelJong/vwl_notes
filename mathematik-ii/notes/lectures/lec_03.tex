@@ -45,12 +45,26 @@ Graph von Funktionen mit verschiedener D und Z können gleich aussehen. Die Funk
     \end{equation} 
 \end{definition}
 
+\begin{definition}
+    [Umkehrfunktion] eine Funktion, deren D und Z Mengen, sowie die Bedingung zu einer gegenteiligen Funktion umgekehrt werden können. Gilt nur für \textit{bijektive} Funktionen.
+\end{definition}
 Die Eigenschaften \textit{\textbf{Surjektivität}} und \textit{\textbf{Interjektivität}} sind von einander unabhängig. Wenn beide zutreffen ist eine Funktion \textit{\textbf{Bijektiv}}
 
 \begin{definition}
-    [Komposition] oder Verschachtelung von Funktionen, wobei die Definitionsmenge einer Funktion $f$ gleich der Zielmenge einer Funktion $q$ ist. Schreibweise
+    [Komposition] oder Verschachtelung von Funktionen, wobei die Definitionsmenge einer Funktion $f$ gleich der Zielmenge oder Wertebereich einer anderen Funktion $q$ ist. Schreibweise:
     \begin{equation}
-        (f \dotfill q) = f(q(x)) 
-    \end{equation} 
-
+        (f \circ q) = f(q(x)) 
+    \end{equation}
 \end{definition}
+
+\begin{definition}
+    [Bild] einer Menge ist die Menge aller Elementen der Zielmenge, die bei einer Inputmenge A ausgegeben werden.
+\end{definition}
+
+\begin{theorem}
+    [Komposition und Umkehrfunktion] die Umkehrfunktion einer Komposition ist gleich der getauschten Reihenfolge ihrer Umkehrfunktionen.
+    \begin{equation}
+        f: D_2 \rightarrow Z_2 \quad \text{und} \quad g: D_1 \rightarrow Z_1 \text{ bijektiv, mit } Z_1 = D_2, \text{ dann gilt }
+        (f \circ g)^{-1}(z) = (g^{-1} \circ f^{-1})(z)
+    \end{equation}
+\end{theorem}
