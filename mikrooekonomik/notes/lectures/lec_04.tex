@@ -1,0 +1,73 @@
+% !TEX root = ../main.tex
+\lecture{4}{2026-10-08}{Nutzenmaximierung}
+
+\subsection{Indifferenz als Funktion}
+Die einzelnen Höhenlinien werden als Indifferenzkurven behandelt. Dabei sind Waren in einer bestimmten Menge substituierbar, ohne dass Nutzen verloren wird.
+
+\subsubsection{Eigenschaften}
+\begin{itemize}
+    \item Konvexität
+    \item Absolutewerte der Nutzen haben keine Bedeutung, nur relativ zu einander
+    \item 2 Indifferenzkurven/Höhenlinien schneiden sich nicht, \textbf{keine gemeinsamen Punkte}
+          \begin{itemize}
+              \item Weil sonst keine Rangordnung möglich
+          \end{itemize}
+\end{itemize}
+
+\subsubsection{Funktion}
+Es wird ein Nutzenwert ausgewählt auf dessen Höhenlinie alle Nutzensgleiche Güterkombinationen befinden.
+\begin{equation}
+    U(W,F) = U_0 \rightarrow F(W) = \frac{U_0}{W}
+\end{equation}
+
+\pagebreak
+\subsubsection{Cobb-Douglas Funktion}
+
+\begin{definition}
+    [Cobb-Douglas]
+    \begin{equation}
+        U(X,Y) = cX^\alpha Y^\beta
+    \end{equation}
+
+    \begin{equation}
+        Y= \left[\frac{U_0}{cX}\right]^\frac{1}{\beta}
+    \end{equation}
+\end{definition}
+
+\subsection{Grenzrate der Substitution (Marginal Rate of Substitution)}
+
+\begin{definition}
+    [GRS] Wie Verändert sich das Mengenverhältnis zweier Waren auf einer gleichen Indifferenzkurve zu jedem Punkt. Ableitung der Indifferenzfunktion.
+    \begin{equation}
+        F'(W) = \frac{U_0}{W}
+    \end{equation}
+\end{definition}
+
+\subsubsection{Optimum}
+Das Optimum befindet sich beim Totalen Differenzial der Nutzenfunktion beim Wert 0, sodass:\footnote{aus Multivariable Calculus}
+\begin{equation}
+    GRS(X^*,Y^*) = \frac{dU_X}{dU_Y}
+\end{equation}
+
+\subsection{Angewandte Mikroökonomie II}
+
+\subsubsection{Fremdbezogene Präferenzen}
+
+Gegeben sei eine Modellökonomie worin Akteure: A (egoistisch) und B (altruistisch), folgende Nutzenfunktionen haben. Zur Vereinfachung besteht jeder Güterbündel aus einer einzigen Ware.
+
+\begin{equation}
+    U_A(X_A) = X_A 
+\end{equation}
+\footnote{diskrete senkrechte Geraden}
+\begin{equation}
+    U_B(X_B, X_A)= {X_A}^{0.8}X_B^{0.2} 
+\end{equation}
+\footnote{diskrete Indifferenzkurven}
+\subsubsection{Ungleichheitsaversion}
+
+
+\begin{equation}
+    U_B(X_A,X_B) = X_B - \alpha max\left\{X_A-X_B,0\right\} - \beta max \left\{ X_B - X_A, 0\right\}
+\end{equation}
+
+wobei angenommen wird, dass $0 < \beta < 1$ und $\beta \le \alpha$
