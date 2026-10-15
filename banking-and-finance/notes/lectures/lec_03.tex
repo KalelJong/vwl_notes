@@ -1,4 +1,5 @@
 % !TEX root = ../main.tex
+\pagebreak
 \lecture{3}{2026-09-28}{Woche 3 Time Value of Money}
 
 \section{Time Value of Money}
@@ -8,14 +9,13 @@
 \begin{definition}
     [Compound Interest oder Zinseszins] exponential funktion aus einer Anfangsmenge oder Present Value (PV) und wiederholter Zinsatz (k) auf neuer Wert der letzten Periode über eine Periodendauer (t) resultiert in Future Value (FV):
     \begin{equation}
-        f(x) = G * Z^n
+        f(x) = PV \cdot k^t
     \end{equation}
 \end{definition}
 \textbf{Fragen}
 \begin{itemize}
     \item Wie wächst ein PV mit Zinsatz k in Periode t?
     \item Welcher PV muss heute investieren werden um mit k einen gewissen FV zu erreichen?
-    \item Wie vie
 \end{itemize}
 \textbf{Gründe}
 \begin{itemize}
@@ -27,7 +27,7 @@
 \begin{definition}
     [\textit{diskrete} Unterjährige Verzinsung] wenn innerhalb einer Periode t eine wiederholte Verzinsung stattfindet.
     \begin{equation}
-        FV = PV * (1+\frac{R}{m})^{t*m}
+        FV = PV \cdot (1+\frac{R}{m})^{t\cdot m}
     \end{equation} 
     Wobei $R:$ unterjähriger Zinssatz oder Gesamtzinssatz, $m$: Anzahl Verzinsungen im Jahr.
 \end{definition}
@@ -42,7 +42,7 @@
 \begin{definition}
     [Kapitalwertmethode oder Net Present Value] 
     \begin{equation}
-        NPV = - I_0 + \sum_{t=1}^{T}[\frac{CF_t}{(1 + k)^t}]
+        NPV = - I_0 + \sum_{t=1}^{T}\left[\frac{CF_t}{(1 + k)^t}\right]
     \end{equation}
 \end{definition}
 

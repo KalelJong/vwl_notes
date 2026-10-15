@@ -31,15 +31,23 @@
 \subsection{Grenzwerte}
 Es kann für eine Folge immer ein Glied n gefunden werden, ab dem alle weitere weniger entfernt sind von einem vermuteten Grenzwert als $\epsilon$. Wenn das gilt dann ist der Grenzwert wahr. Mit der defintion kann nur eine gegebene Grenzwertvermutung geprüft werden, sie gibt keine grenzwerte an für eine Reihe.
 \begin{definition}
-    [Grenzwert oder Konvergenz]
+    [Grenzwert oder Konvergenz] 
 
 \end{definition}
 
 \begin{definition}
-    [\textit{unengentliche} Grenzwert] umgekehrt zum eigentlichen Grenzwert. Gibt es zu jedem $a \in \mathbb{R} \text{ein} m \in \mathbb{R} \text{, sodass für alle} n > m$ \footnote{Für jeden Folgeglied, gibt es einen wert m}
+    [\textit{unengentliche} Grenzwert] umgekehrt zum eigentlichen Grenzwert. Gibt es zu jedem $a \in \mathbb{R}$ ein $ m \in \mathbb{R} \text{, sodass für alle} n > m$ \footnote{Für jeden Folgeglied, gibt es einen wert m}
 \end{definition}
 \subsection{Harmonische Folge und Reihe}
 Für diese Folge Art sollte man Grenzwert kennen.
+
+\begin{definition}
+    [Harmonische Folge] 
+    \begin{equation}
+        a_n = \frac{1}{n^c}
+    \end{equation}
+    $n \in \mathbb{N}$ und $c>0$
+\end{definition}
 
 Bei einer folge 1/n wird
 bei lim inf+ die korrespondierende Reihe unendlich gross, weil 1 + 1/2 (halb) + 1/3 + 1/4 + 1/6 (halb)
@@ -47,4 +55,25 @@ Beide fälle folge, die nach 0 kovergieren aber ihre Reihen unterschiedlich sind
 
 \begin{theorem}
     Jede konvergente Folge ist beschränkt.
+\end{theorem}
+
+\subsection{Vergleichssätze}
+
+Wenn alle Glieder einer Folge $a_n$ grösser sind als die einer anderen $b_n$ ist der eingentliche oder unengleichtliche Grenzwert (falls gegeben) auch grösser.
+
+\subsubsection{Quetschsatz}
+
+\begin{theorem}
+    [Quetschsatz] wenn 3 Folgen gegeben wobei jedes Glied der Folgen a <= b <= c und a und c gleiche Grenzwerte haben, muss b zwingend denselben Grenzwert haben.
+\end{theorem}
+
+\subsection{Rechenregel}
+
+\subsubsection{Uneigentliche Grenzwerte}
+
+\begin{theorem}
+    unbestimmte Ausdrücke:
+    \begin{itemize}
+        \item $\frac{\pm \infty}{\pm \infty}$
+    \end{itemize}
 \end{theorem}

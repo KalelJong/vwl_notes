@@ -2,56 +2,71 @@
 \lecture{2}{2026-09-21}{Woche 2}
 
 \section{Investitionsrechnung}
-\textbf{Definition} \textit{Investition} Aktiventausch vom flüssigen Mittel (Geld) in Anlagevermögen [Kapital]. \textit{Siehe figures Bilanz\_Investition.png}
-\textbf{Zentrale Fragen der Investitionsrechnung} Wie viel und worin soll investiert werden?
-\subsection{Rechenverfahren}
-\subsubsection{Statische Investitionsrechenverfahren}
 
+\begin{definition}
+    [Investition] Aktiventausch vom flüssigen Mittel (Geld) in Anlagevermögen [Kapital]. \textit{Siehe figures Bilanz\_Investition.png}
+\end{definition}
+\textbf{Zentrale Fragen der Investitionsrechnung} Wie viel und worin soll investiert werden?
+
+\subsection{Investitionsarten}
+\includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{figures/Investitionsarten.png}
+\pagebreak
+\subsection{Statische Investitionsrechenverfahren}
+\begin{definition}
+    [\textbf{Statische} Rechenverfahren] weil das zeitliche Eintreffen der Cash-Flows vernachlässig wird. Es wird ein durchschnittliches Zufluss von Cash während der gesamten Dauer des Projekts angenommen.
+\end{definition}
+
+\subsection{Elemente}
 \begin{itemize}
-    \item Basisdaten
     \item Kaufpreis (I)
     \item Liquidationswert (L)
     \subitem Endwert Devaluation nach volle Nutzungsdauer
     \item Kapitalzinsen
     \item Nutzungsdauer (n)
-    \item Jaehrliche Abschreibung (Devaluation) = I/n 
+    \item Jährliche Abschreibung (Devaluation) = I/n 
     \item Kapitalzinsen / Jahr
 \end{itemize}
 
-\textbf{Defnition} \textit{Kalkulationszins} ist Reditemöglichkeit einer Alternativeinvestition.
+\begin{definition}
+    [Kalkulationszins] ist Reditemöglichkeit einer Alternativeinvestition.
+\end{definition}
 \begin{theorem}
-    Kalkulatorische Zinsen (Betrag, kein Cash Flow) = Gebundenes Kapital (Avg Kapital dass alternativ arrenditiert) * Kapitalzinssatz 
+    Kalkulatorische Zinsen (Betrag pro Jahr, kein Cash Flow) = Gebundenes Kapital (Avg Kapital pro Jahr, das alternativ arrenditiert werden könnte) * Kapitalzinssatz 
 \end{theorem}
-\break \textbf{Beispiel} \break 
-Bei einer Investition von 240, die über 8 Jahre ihren ganzen Wert verliert, und Kapital/Kalkulationszins von 10\%.
-Sind mit durchschnittliche 10\% Zinsen auf (240-0)/2 oder 120 pro Jahr zu rechnen. Diese sind entgangene Rendite (Opportunitätskosten der Investition)
+\textbf{Beispiel} \break 
+Bei einer Investition in einer Maschine/Lastwagen von 240, die über 8 Jahre ihren gesamten Wert abgeschrieben bekommt, und Kapital/Kalkulationszins von 10\%.
+Sind mit durchschnittliche 10\% Zinsen auf (240-0)/2  = 120 pro Jahr zu rechnen. Diese sind entgangene Rendite (Opportunitätskosten der Investition).
 \subsection{Rechenverfahren}
-    \subsubsection{Kostenrechnung (Summe von)}
+    \subsubsection{Kostenvergleichsrechnung (Summe von)}
+    Ansatz zur Entscheidung auf Basis der tiefsten Projektkosten der gegebenen Alternativen. Erlös bleibt unberücksichtigt.
     \begin{itemize}
-        \item Betriebskosten
-        \item Lohnkosten
-        \item Abschreibung (Devaluation)
-        \item Kalkulationszins
+        \item Betriebskosten ($K_b$)
+        \subitem Lohnkosten etc.
+        \item Abschreibung (Devaluation - $K_a$) 
+        \item Kalkulationszins ($K_z$)
     \end{itemize}
-    \subsubsection{Gewinnsrechnung}
+    \subsubsection{Gewinnvergleichsrechnung}
     \begin{itemize}
-        \item Umsatz - Kosten 
+        \item Betriebseinahmen (pro Jahr) - Kosten (Aus Kostenvergleichsrechnung)
     \end{itemize}
-    \subsubsection{Rentabilitätsrechnung (Summe von)}
-        \begin{itemize}
-        \item Gewinn
-        \item Kalkulationszins
-        \item 
-    \end{itemize}
+    \subsubsection{Rentabilitätsrechnung}
+    Erst mit dieser Methode ist ein Vergleich zwischen Projekten mit unterschiedlichem Kapitaleinsatz möglich, da die Rendite aus einem Quotient (Reingewinn vor Zinsen / Gebundenes Kapital) und nicht aus absolutem Wert besteht.
+        
+    \begin{equation}
+        ROI = \frac{Gewinn - Kalkulationszins}{\emptyset Kapital_{gebunden}}
+    \end{equation}
     \subsubsection{Amortisationsrechnung}
-    In welcher Zeit decken sich die durchschnittliche Ausgaben und Einnahmen pro Jahr, oder ab wie viele Jahre profitabel.
+    In welcher Zeit decken sich die durchschnittliche Ausgaben und Einnahmen pro Jahr, oder ab wie viele Jahre wird das Projekt profitabel.
+    Jedoch kein Bezug auf die Rentabilität des Projekts. 
     \begin{itemize}
-        \item Zusätzliche Einnahmen - Ausgaben pro jahr
-        \item überschüssige Einnahmen pro jahr
-        \item Amortisationszeit = Investition / ü. Einnahmen = X Jahre
+        \item Einnahmen - Betriebsausgaben pro jahr = Gewinn vor Zinsen/Abschreibungen pro Jahr
+        \item Amortisationszeit = Investitionskosten ($I_0$) / Gewinn vor Zinsen/Abschreibungen pro Jahr = X Jahre
     \end{itemize}
 
-\subsubsection{Zusammenfassung statische}
+\subsubsection{Zusammenfassung der statischen Methoden}
 \begin{itemize}
-    \item engen Bezug Rechnungswesen
-\end{itemize}
+    \item Haben einen engen Bezug zum Rechnungswesen (Erfolgsrechnung, Bilanz ($I_0$))
+    \item Werte werden als Durchschnitte einer Periode betrachtet
+    \item Keine Auskunft über Zeitspezifische Anfälle von Cash-Flows
+    \item Nutzungsdauer bleibt unberücksichtigt
+\end{itemize} 

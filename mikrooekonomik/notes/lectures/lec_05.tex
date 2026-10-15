@@ -1,0 +1,78 @@
+% !TEX root = ../main.tex
+\lecture{5}{2026-10-15}{Nutzenmaximierung}
+
+\subsection{Nutzenmaximierung}
+Die Indifferenzkurve stellt Bündel dar, die sich in ihren internen Mengenverhältnissen ohne Präferenzrangordnung einander als Substitute gelten. Dabei ist das Budget eines Akteurs aber beschränkt und der Bündel, dessen Mengenverhältnis dem Mengenpreisverhältnis des Budgets entspricht, muss daher als Optimum gelten. Wenn nicht auf dem tangential Punkt: Bündel wäre nicht gesättigt (in Menge und in Preis, Geld wäre noch übrig), oder ausserhalb des leistbaren Bereichs, ausserhalb des verfügbaren Budgets.
+Um das Optimum zu bestimmen muss die Indifferenzkurve gefunden werden, die die Budgetgerade\footnote{Gerade, worauf Preisverhältnisse der Waren dem Budget entsprechen. } tangiert und ihren entsprechenden Schnittpunkt.
+Es kann nur eine Indifferenzkurve geben, die diese Bedingung erfüllt, weil die Vorraussetzung besteht: 2 Indifferenzkurven dürfen sich nicht schneiden, sonst wäre die Transivität verletzt.
+\break
+\subsubsection{Optimalitätsbedingung}
+\begin{equation}
+    GRS/MRS(W^*, F^*) = \frac{U_W(W,F)}{U_F(W^*,F^*)} = \frac{P_W}{P_F} 
+\end{equation}
+
+\pagebreak
+\subsubsection{Lösung mit Nebenbedingung}
+Die Budgetbedingung muss daher in der Nutzensfunktion berücksichtigt werden. So löst man die Budgetfunktion nach der Warenmenge-F.
+
+\begin{equation}
+    M = P_F \cdot F + P_W \cdot W 
+\end{equation}
+
+\begin{equation}
+    \label{eq_F}
+    F = \frac{M}{P_F} - \frac{P_W}{P_F} \cdot W
+\end{equation}
+\textbf{Nutzenfunktion} \footnote{M/Pf ist eine Konstante}
+\begin{equation}
+    \label{eq_U}
+    U(W,F) = W^{\frac{1}{2}} \cdot F^{\frac{1}{2}}
+\end{equation}
+Und fügen das bedingte F \ref{eq_F} in die Nutzensfunktion \ref{eq_U} ein.
+\begin{equation}
+     U(W) = W^{\frac{1}{2}} \cdot {\left( \frac{M}{P_F} - \frac{P_W}{P_F} \cdot W \right)}^{\frac{1}{2}}
+\end{equation}
+
+Folglich wird die Ableitung der Nutzenfunktion gleich null gesetzt, sodass der Maximumspunkt mit der Budgetbedingung erreicht ist. Mit Produkt- und Kettenregel gilt:
+
+\begin{align}
+    U'(W) &= \frac{1}{2} W^{-\frac{1}{2}} \left( \frac{M}{P_F} - \frac{P_W}{P_F} W \right)^{\frac{1}{2}} 
+    + W^{\frac{1}{2}} \cdot \frac{1}{2} \left( \frac{M}{P_F} - \frac{P_W}{P_F} W \right)^{-\frac{1}{2}} \left( -\frac{P_W}{P_F} \right) \\
+    &= \frac{1}{2}\left(\frac{\frac{M}{P_F} - \frac{P_W}{P_F} W}{W}\right)^{\frac{1}{2}} - \frac{P_W}{2P_F}\left(\frac{W}{\frac{M}{P_F} - \frac{P_W}{P_F} W}\right)^{\frac{1}{2}}
+\end{align}
+
+Setzt man $U'(W)=0$, folgt:
+
+\begin{equation}
+    \frac{1}{2}\left(\frac{\frac{M}{P_F} - \frac{P_W}{P_F} W}{W}\right)^{\frac{1}{2}} = \frac{P_W}{2P_F}\left(\frac{W}{\frac{M}{P_F} - \frac{P_W}{P_F} W}\right)^{\frac{1}{2}}
+\end{equation}
+
+Setzt man $A = \frac{M}{P_F} - \frac{P_W}{P_F}W$, multipliziert beide Seiten mit $2$ und quadriert, folgt:
+
+\begin{equation}
+    \frac{A}{W} = \left(\frac{P_W}{P_F}\right)^2 \frac{W}{A}
+    \quad\Longrightarrow\quad
+    A^2 = \left(\frac{P_W}{P_F}\right)^2 W^2
+\end{equation}
+
+\pagebreak
+Da Mengen und Preise positiv sind, gilt $A = \frac{P_W}{P_F}W$. Eingesetzt in die Definition von $A$ ergibt sich:
+
+\begin{equation}
+    \frac{M}{P_F} - \frac{P_W}{P_F}W = \frac{P_W}{P_F}W
+\end{equation}
+
+\begin{equation}
+    W^* = \frac{M}{2P_W}
+\end{equation}
+
+Mit der Budgetbedingung ist dann:
+
+\begin{equation}
+    F^* = \frac{M}{P_F} - \frac{P_W}{P_F}\cdot \frac{M}{2P_W} = \frac{M}{2P_F}
+\end{equation}
+
+Somit liegt das Nutzenmaximum bei $W^* = \frac{M}{2P_W}$ und $F^* = \frac{M}{2P_F}$.
+
+
+\subsubsection{Lagrange-Verfahren}
