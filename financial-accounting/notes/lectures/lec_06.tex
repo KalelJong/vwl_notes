@@ -1,0 +1,85 @@
+% !TEX root = ../main.tex
+\lecture{6}{2026-10-19}{Periodenabgrenzung}
+
+\section{Periodenabgrenzung}
+
+\subsection{Grundproblematik}
+Man möchte über die Buchhaltung die Finanzielle Lage eines Unternehmens zuverlässig beurteilen können. Methoden:
+\begin{itemize}
+    \item Gesamten Lebenszyklus/Historie des Unternehmens betrachten
+    \begin{itemize}
+        \item Praktisch nicht umsetzbar, weil Behörden, Kunden, Investoren \textit{\textbf{periodenspezifische}} Informationen verlangen
+        \item zwingend: Aufteilung des Gesamten in abgegrenzte Perioden
+        \item \textbf{Problem}: periodenüberschreitende Handlungen müssen sauber in einzelne Perioden gebucht werden.\footnote{Geld als Zahlungsmittel, zeitliche abgrenzung von kauf und verkauf hier abgebildet, wobei (Debitoren und kreditoren) diesselbe Eigenschaft haben. Nur nicht periodenüberschreitend}
+    \end{itemize}
+    \item Perioden in der Buchhaltung (wahl der Start und Ende der Perioden/ des Geschäftsjahres der individuellen Aktivität abhängig): 
+    \begin{itemize}
+        \item Jahr => Geschäftsjahr nicht fällt nicht zwingend mit Kalenderjahr zusammen
+        \item Quartal
+    \end{itemize}
+\end{itemize}
+
+\textbf{Arten von Abgrenzung:}
+\begin{itemize}
+    \item Sachliche
+    \begin{itemize}
+        \item Zum Beispiel Film, der 2025 produziert/kosten aber erst 2026 Einnahmen verursachen wird. Aufwände und Erträge dürften nach sachlicher Abgrenzung in dergleichen Periode gebucht werden. 
+    \end{itemize}
+    \item Zeitliche (Diese wird in der Vorlesung behandelt)
+\end{itemize}
+
+\textbf{Mögliche Fälle}
+\begin{itemize}
+    \item erfasste Buchungstatsachen, die einer anderen Periode zuzuordnen sind.
+    \item noch nicht erfasste Buchungstatsachen, die der aktuellen Periode zuzuordnen sind.
+\end{itemize}
+
+\textbf{Lösung:} Transitorische Bilanzkonten 
+\subsection{Transitorische Aktiven}
+\subsubsection{Aufwandsvortrag} 
+    \begin{itemize}
+        \item Zahlung im aktuellen Jahr, die ökonomisch der nächsten Periode zuzuordnen ist.
+        \item Buchungstatsache: Versicherung 12 Monate am 09.2000 bis 09.2001 für 6000 oder 500/monat
+        \begin{enumerate}
+            \item Versicherungsaufwand/Bank 6000 (Gesamt kosten auch wenn nur 1500 für dieses Geschäftsjahr)
+            \item Transitorische Aktiven/Versicherungsaufwadn / 4500 (so gleichen sich diesea auf 1500 aus, das tatsächlich relevante Betrag)
+            \item Versicherungsaufwand / Transitorische Aktiven / 4500 (Umkehrung nach abschluss des )
+        \end{enumerate}
+    \end{itemize}
+    
+\subsubsection{Ertragsnachtrag}
+    \begin{itemize}
+        \item Rechnung in der nächsten Periode, die der aktuellen Periode zuzuordnen ist.
+        \item Leistung wurde bereits erbracht und somit "verdient", zahlung erfolgt erst nach Neujahr (31.12) 
+        \begin{enumerate}
+            \item 31.12  Transitorische Aktiven / Umsatzerlös 20k (Hier gewinn)
+            \item 1.1 Umsatzerlös / TA 20k (Hier Ausgleich)
+            \item 31.1 (Rechnungsstellung) Debitoren / Umsatzerlös 20k (Hier Ausgleich)
+        \end{enumerate}
+    \end{itemize}
+\subsection{Transitorische Passiven}
+
+\subsubsection{Aufwandsnachtrag}
+\begin{itemize}
+    \item Zahlung in der nächsten Periode aber Aufwand der aktuellen Periode
+    \item Buchungstatsache: Hypothek aufnahme, erste zinszahlung,  wobei zweite zinszahlung periodenüberschreitend ist
+    \begin{enumerate}
+        \item 31.10 Finanzaufwand / Bank 12k 
+        \item 31.12 Finanzaufwand / Transitorische Passiven 4k (Zahlungsperiode sind 6 monate, 4k entspricht periode von 2 Monate bis Neujahr)
+        \item 1.1 Transitorische Passiven / Finanzaufwand 4k (Umkehrung nach neujahr)
+        \item 30.4 Finanzaufwand / Bank 12k (Gesamte 6 Monate wobei 2 periodenüberschreitend)
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{Ertragsvortrag}
+
+\begin{itemize}
+    \item Rechnung in der aktuellen Periode aber Leistung/Ertrag in der nächsten.
+    \item Buchungstatsache 
+    \begin{enumerate}
+        \item Bank/Umsatzerlös 100k
+        \item 31.12 Umsatzerlös/tp 20k
+        \item tp/Umsatzerlös 20k
+    \end{enumerate}
+\end{itemize}
+

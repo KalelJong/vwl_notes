@@ -1,0 +1,55 @@
+% !TEX root = ../main.tex
+\lecture{6}{2026-10-19}{Grundlagen Reelle Funkitionen}
+
+\subsection{Verknüpfung reeler Funktionen}
+
+Operationen zwischen Abbildungsvorschriften, zB. (f+g)(x) + g(x)
+
+\subsubsection{Max-Funktion}
+
+Bei der max zweier Funktionen, wählt man denjenigen Wert an der gleichen stelle an beide Funktionen, der am grössten ist.
+
+
+\subsection{Komposition mit affin-linearen Funktionen}
+
+$f(x) = x - 0.001x^3$
+
+$g(x) = 2x + 10 $4
+
+f(g(x)) => Faktor 2x von g(x) führt dazu, dass Eingabe Werte von f(x) 2 mal schneller denselben y erreichen, also findet eine \textit{stauchung} um faktor 1/2 statt. wenn bei x = 10 den wert 30 erreicht wurde, kann jetzt mit der Komposition die x = 5 , y= 30 schon erreichen. 10 schiebt nach links aus selben grund, da x = 0 bereits den ursprunglichen wert von x = 10 erreichen kann
+
+
+g(f(x)) => 2f(x) + 10, eifacher streckungsfaktor 2 und jeder Wert um 10 erhöht, also Graph nach oben verschoben.
+
+\subsection{Grenzwerte}
+\begin{definition}
+    [Grenzwert einer Funktion] ähnlich wie Def. für Folgen.
+    
+       $ \lim_{x \rightarrow + \inf} f(x) = a$ \text{, wenn es zu jedem $\epsilon > 0$ ein $m \in \mathbb{R}$ gibt sodass für alle $x > m \exists |f(x) - a| < \epsilon$}
+\end{definition}
+
+\subsubsection{Vergleichssatz}
+ähnlich wie Quetschsatz, können Grenzwerte der Terme einer gegebenen Funktion verglichen werden
+
+\subsubsection{Rechts und Linksseitige Grenzwert}
+
+Epsilon delta definition: 
+
+$\lim_{x \rightarrow 10^+}$ bedeutet x nähert sich 10 an in dem es aus einer Zahl grösser immer kleiner wird. Es gibt für jedes epsilon einen delta > 0, worin alle werte grösser als 10 und weniger als delta, weniger von 10 entfernt sind als epsilon. Gleiches gilt für linksseitig.
+
+\subsubsection{Grenzwert einer stelle}
+
+Wenn links und rechtsseitige Grenzwerte gleich sind gibt es an der stelle x einen \textit{Grenzwert an der Stelle}, auch wenn der Wert des Grenzwerts nicht in der Definitionsmenge akzeptabel ist.
+Bei unterschiede von links und rechts:
+\begin{itemize}
+    \item Asymptote (zb $1/x^2$ bei x = 0)
+    \item Nicht stetig oder Unterbruch (Aufrundungsfunktion)
+\end{itemize}
+
+\begin{definition}
+    [Stetigkeit eines Funktionpunkts] wenn in $x_0$ der $lim{x\rightarrow x_0} = f(x_0)$ oder wenn an der Stelle x0 der Grenzwert existiert und gleich dem Funktionwert an der Stelle ist.
+\end{definition}
+
+\begin{definition}
+    [Stückweise stetige Funktion] wenn endliche Anzahl an Unstetigkeiten vorhanden 
+\end{definition}
