@@ -29,15 +29,32 @@
 \end{definition}
 
 \subsection{Grenzwerte}
-Es kann für eine Folge immer ein Glied n gefunden werden, ab dem alle weitere weniger entfernt sind von einem vermuteten Grenzwert als $\epsilon$. Wenn das gilt dann ist der Grenzwert wahr. Mit der defintion kann nur eine gegebene Grenzwertvermutung geprüft werden, sie gibt keine grenzwerte an für eine Reihe.
 \begin{definition}
-    [Grenzwert oder Konvergenz] 
-
+    [Grenzwert [a] einer Folge] existiert wenn für jedes Gewählte Abstand $\epsilon$ von a es einen Folgeglied-m gibt, ab dem alle grösseren glieder (n>m) näher zu a sind als $\epsilon$
+    \begin{equation}
+        \forall \epsilon \exists \left\{a_m\right\}_{m\in\mathbb{R}} | n > m | \quad a_n - a \quad < \epsilon 
+    \end{equation}
+ 
+    Gegeben einen Grenzwert und epsilon kann die Ungleichung nach dem entsprechende m-te Glied gelöst werden
 \end{definition}
 
 \begin{definition}
-    [\textit{unengentliche} Grenzwert] umgekehrt zum eigentlichen Grenzwert. Gibt es zu jedem $a \in \mathbb{R}$ ein $ m \in \mathbb{R} \text{, sodass für alle} n > m$ \footnote{Für jeden Folgeglied, gibt es einen wert m}
+    [\textit{unengentliche} Grenzwert] umgekehrt zum eigentlichen Grenzwert.  \footnote{Für jeder vermuteter Grenzwert und gegebene epsilon-umgebung, gibt es einen m-te Folgeglied ab dem alle weiter entfernt sind.}
+
+    \begin{equation}
+         \forall a \exists \left\{a_m\right\}_{m\in\mathbb{R}} | n > m | a_n > a
+    \end{equation}
 \end{definition}
+
+\subsection{Konvergenz und Beschränktheit}
+\begin{itemize}
+    \item konvergente Folge => beschränkt
+    \begin{itemize}
+        \item Umkehrung nicht zwingend war
+        \item $-1^n$ beschränkt aber divergent  
+    \end{itemize}
+    \item Begrenzte und monoton fallend oder steigend => konvergent   
+\end{itemize}
 \subsection{Harmonische Folge und Reihe}
 Für diese Folge Art sollte man Grenzwert kennen.
 
@@ -59,7 +76,13 @@ Beide fälle folge, die nach 0 kovergieren aber ihre Reihen unterschiedlich sind
 
 \subsection{Vergleichssätze}
 
-Wenn alle Glieder einer Folge $a_n$ grösser sind als die einer anderen $b_n$ ist der eingentliche oder unengleichtliche Grenzwert (falls gegeben) auch grösser.
+\begin{itemize}
+    \item Für konvergente Folgen
+    \begin{itemize}
+\item Wenn alle Glieder einer Folge $a_n$ grösser sind als die einer anderen $b_n$ ab dem m-te Glied, ist der eingentliche oder unengleichtliche Grenzwert (falls gegeben) auch grösser.
+    \end{itemize}
+    \item 
+\end{itemize}
 
 \subsubsection{Quetschsatz}
 
@@ -67,6 +90,46 @@ Wenn alle Glieder einer Folge $a_n$ grösser sind als die einer anderen $b_n$ is
     [Quetschsatz] wenn 3 Folgen gegeben wobei jedes Glied der Folgen a <= b <= c und a und c gleiche Grenzwerte haben, muss b zwingend denselben Grenzwert haben.
 \end{theorem}
 
+\subsection{Besondere Folgen und Reihen}
+\begin{definition}
+    [arithmetische Folge] sind Folgen, bei den die Differenz zweier aufeinander folgenden Glieder immer konstant (d) ist.
+    \begin{equation}
+        a_{n+1} - a_n = d
+    \end{equation}
+\end{definition}
+
+\begin{definition}
+    [arithmetische Reihe] 
+    \begin{equation}
+        s_n = \sum_{i=i}^{n} (a_i (i - 1) d) 
+    \end{equation}
+    \begin{itemize}
+        \item Wenn d > 0 => divergiert $+ \inf$
+        \item wenn d< 0 => divergent $- \inf$
+        \item wenn d = 0 konvergiert konstante $a_1$
+    \end{itemize}
+\end{definition}
+
+\begin{definition}
+    [geometrische Folge] sind Folgen, bei das Verhältnis/Quotient zweier aufeinander folgenden Glieder immer konstant (q) und > 1 ist. Wenn q < 1 konvergiert gegen 0
+    \begin{equation}
+        \frac{a_{n+1}}{a_n} = q, q\neq 1    
+    \end{equation}
+\end{definition}
+
+
+\begin{definition}
+    [geometrische Reihe] wenn |q| < 1
+    \begin{equation}
+       \lim_{n \rightarrow \inf} a_1 \frac{1-q^n}{1-q} = \lim_{n \rightarrow \inf} \frac{a}{1+q}
+    \end{equation}
+    Weil q^n gegen 0 konvergiert wenn |q| < 1 also für $0 \le q \le 1$
+\end{definition}
+
+\subsubsection{Definition von e aus Grenzwert einer Folge}
+\[
+ \lim_{n \to \infty} \left(1 + \frac{x}{n}\right)^n = e^x 
+\]
 \subsection{Rechenregel}
 
 \subsubsection{Uneigentliche Grenzwerte}
@@ -75,5 +138,6 @@ Wenn alle Glieder einer Folge $a_n$ grösser sind als die einer anderen $b_n$ is
     unbestimmte Ausdrücke:
     \begin{itemize}
         \item $\frac{\pm \infty}{\pm \infty}$
+        \item $\frac{0}{0}$
     \end{itemize}
 \end{theorem}
