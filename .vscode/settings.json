@@ -24,5 +24,6 @@
             "tools": [ "latexmk" ]
         }
     ],
-    "latex-workshop.latex.clean.subfolder.enabled": true
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "cSpell.language": "en,de-CH"
 }

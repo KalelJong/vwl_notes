@@ -1,0 +1,140 @@
+% !TEX root = ../main.tex
+\lecture{7}{2026-10-26}{Bewertung}
+
+\section{Bewertung}
+
+\begin{definition}
+    [Bewertung] der Wert, der in der Bilanzpositionen steht.j
+\end{definition}
+\begin{itemize}
+    \item Positionen
+    \begin{itemize}
+        \item Kasse
+    \item Anlagevermögen
+    \item 
+\end{itemize}
+\item Erstbewertung
+\begin{itemize}
+    \item Problemlos, weil Wert einer Maschine ihren Kaufpreis entspricht
+\end{itemize}
+\item Folgebewertung
+\begin{itemize}
+    \item Vermögenswerte werden abgeschrieben (devalued) \footnote{Was wäre der Prozess, der diese Abschreibung erklärt? Konstant Kapital usw nicht berücksichtigt }
+    \item Abschreibung als Werkzeug zur Bewertung devaluierender Positionen 
+\end{itemize}
+\end{itemize}
+\subsection{Grundproblematik}
+Nächste Woche weil konzeptionell, heute nur technische Rechnung von 7.2 und .3
+\subsection{Bewertung Aktiven}
+\subsubsection{Methoden}
+\begin{itemize}
+    \item Lineare Abschreibungen (arithmetisch)
+    \begin{itemize}
+        \item Angenommen Anlage verliert jedes Jahr ein fixer Betrag an Wert bis 0
+        \item Daraus wird durchschnittliche Abschreibung pro Jahr berechnet
+        \item Abschreibungen in den spezifischen Perioden stimmen aber nicht zwingend 
+    \end{itemize}
+    \item Degressive Abschreibung (geometrisch)
+    \begin{itemize}
+        \item Verliert jedes Jahr Wert relativ zum aktuellen Wert
+        \item Betragsmässig grössere Abschreibungen am Anfang
+        \item Wird nicht zu null
+    \end{itemize}
+    \item Leistungsorientierte Abschreibung
+    \begin{itemize}
+        \item Anhand vom Output der Periode wird entsprechender Wert zu einem Verhältnis abgeschrieben 
+    \end{itemize}
+    \item Welche Methode soll man verwenden?
+    \begin{itemize}
+        \item Kommt auf die Anlage an
+        \item Wenn es eine Anlage ist, die am Anfang des Gebrauchs bereits viel wert verliert, ist Degressive Methode zu bevorzugen
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Darstellungsmöglichkeiten: Anlagevermögen}
+\begin{itemize}
+    \item Beispiel Fahrzeug
+    \begin{itemize}
+        \item Kaufpreis: 400k
+        \item Abschreibung wird linear über 10 Jahre berechnet mit Rest 50k
+        \item $\frac{400k - 50k}{10 Jahre} = 35k/Jahr$ 
+    \end{itemize}
+    \item Nettomethode (direkte Abschreibung)
+    \begin{itemize}
+        \item Bewertungen werden in einem entsprechendem Aufwand oder Ertrag ihre Spiegelung haben
+        \item 1.1. Fahrzeuge / Bankguthaben 400k
+        \item 31.12 Abschreibungen (Aufwand gestiegen) / Fahrzeuge (wird reduziert)  35k (die durchschnittlich berechnete Abschreibung pro Jahr)
+    \end{itemize}
+    \item Bruttomethode (indirekte Abschreibung)
+    \begin{itemize}
+        \item Mehr Arbeit notwendig für diese Methode, aber detaillierter
+        \item 1.1. Fahrzeuge / Bankguthaben 400k
+        \item 31.12. Abschreibungen / Wertberichtigungen Fahrzeuge (WB) 35k (Wert wird indirekt von Konto Fahrzeug abgeschrieben)
+        \item Wertberichtigungen sind \textbf{negative Aktivkonten} auf aktiv Seite erfasst aber berechnet Abschreibungen
+        \begin{itemize}
+            \item Periodenüberschreitend kumuliert in WB-Konto 
+        \end{itemize}
+        \item In Bilanz
+        \begin{itemize}
+            \item Aktivseite: Fahrzeuge 400k
+            \item - WB Fahrzeuge -35k (kumulierte Abschreibungen)   365k (zwischen Total)
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+Können Aktiven (zB Maschinen) ihre Werte erhöhen? Mehr Wert haben als am Anfang der Periode?
+\begin{itemize}
+    \item Werterhaltung
+    \begin{itemize}
+        \item z.B. Reparaturen
+        \item sind Aufwände
+        \item Reparaturaufwand / Kasse X (sofort in Erfolgsrechnung als Aufwand)
+    \end{itemize}
+    \item Wertvermehrung
+    \begin{itemize}
+        \item z.B. Modernisierungen
+        \item Position in Bilanzkonto ("Aktivierung")
+        \item Gebäude / Kasse X (nicht sofort in Erfolgsrechnung aber in kommenden Jahren )
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Darstellungsmöglichkeiten: Umlaufvermögen}
+\begin{itemize}
+    \item Debitoren (Z.B wenn Rechnung nicht bezahlt wird)
+    \item Darstellung?
+    \begin{itemize}
+        \item Konto '\textit{Delkredere}' Reduziert das Aktivkonto Debitoren \textbf{TODO: REVIEW}
+        \item Keine Buchungen während des Jahres gemacht
+    \end{itemize}
+    \item Neues Erfolgsrechnungskonto: Debitorenverluste (Aufwand) mit 2 Komponente:
+    \begin{itemize}
+        \item effektive Zahlungsausfälle
+        \begin{itemize}
+            \item Debitorenverluste / Debitoren
+        \end{itemize}
+        \item Veränderungen des Kontos ''Delkredere''
+        \begin{itemize}
+            \item Erhöhung (Debitorenverluste /Delkredere)
+            \item Reduktion (Delkredere / Debitorenverluste)
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+\subsection{Bewertung Passiven}
+Grundsätzlich unproblematisch, weil im Beispiel einer Bankschuld 
+Eigenkapital wird nicht Bewertet, weil es zu jedem Zeitpunkt aus der Differenz  der Aktiven und Verbindlichkeiten (FK) besteht.
+
+\textbf{Ausnahme}: Rückstellungen  (z.B. Defekt verkaufter Ware)
+\begin{itemize}
+    \item Verbindlichkeiten, die mit Unsicherheit/Risiko behaftet sind
+    \item ''nur'' hohe Wahrscheinlichkeit eines zukünftigen Mittelabflusses > 50\%
+    \item z.B. Garantierückstellung oder Gerichtverurteilung
+\end{itemize}
+
+\textbf{Beispiel}
+\begin{itemize}
+    \item Garantierückstellung über Garantieaufwand
+    \begin{itemize}
+        \item Kaufpreis wird zurückgestattet
+        \item 20
+    \end{itemize}
+\end{itemize}

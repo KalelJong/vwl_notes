@@ -1,0 +1,122 @@
+% !TEX root = ../main.tex
+\lecture{6}{2026-10-26}{Unternehmensbewertung}
+
+\section{Unternehmensbewertung}
+Nicht den richtigen Wert eines Unternehmens berechnen, sondern Plausibilität des Aktienpreises über Annahmen überprüfen.
+Reverse Valuation
+\subsection{Einführung}
+
+\subsubsection{Grundsatzfragen}
+\begin{itemize}
+    \item Investitionsrechnung
+    \item Unternehmensbewertung
+    \item Grundprobleme
+    \begin{itemize}
+        \item ''Unternehmenswert ist \textit{subjektiv}'' 
+        \item Unternehmens ist meist grösser als die Summe der Vermögenswerte \footnote{Ja klar, es wird nicht nach dem Wert der einzelnen Waren/Geld/Anleihen gesucht, die das Kapital ausmachen, sondern den Wert des Kapitals selbst gesucht. Das heisst, welche Geldgrösse zu einer Profitrate ist im Stande eine G}
+    \end{itemize}
+\end{itemize}
+\subsection{Substanzwert-Methode}
+\begin{itemize}
+    \item Entspricht der Summe aller Vermögenswerte
+    \begin{itemize}
+        \item Aus Infos der Bilanzrechnungen berechnet
+        \item Gegenwartbezogen, entspricht nicht ganz den zukünftigen Wert
+        \item objektive Bilanzbetrachtung
+    \end{itemize}
+    \item Berechnung:
+    \begin{itemize}
+        \item Netto Substanzwert
+        \begin{itemize}
+            \item Wie viel man für das Eigenkapital anteil zahlen muss
+            \item UV + AV - FK = EK oder Netto Substanzwert
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Stillen Reserven}
+\begin{definition}
+    [Stillen Reserven] Differenz zwischen Bilanzwert der Vermögensteile (Buchwert aus Finanzbuchhaltung) und tatsächlichem Wert (Börse/Marktwert) \footnote{Werden hier nicht qualitativ verschiedene Sachen in Geld verglichen?}
+\end{definition}
+\begin{itemize}
+    \item Müssen Sauber berechnet werden, um Gläubiger zu schützen und Transparenz bewahren
+\end{itemize}
+
+\subsubsection{Bereinigung}
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\subsection{Ertragswert}
+
+\begin{definition}
+    [Kapitalkosten] sind Werte/Rendite, die an Kapitalgeber bezahlt werden müssen relativ zum gegebenem Gesamtkapital.
+\end{definition}
+\textbf{Kapitalkostenarten}
+\begin{itemize}
+    \item Fremdkapitalkosten
+    \begin{itemize}
+        \item Explizit vereinbarte \textit{Zins}zahlungen
+    \end{itemize}
+    \item Eigenkapitalkosten
+    \begin{itemize}
+        \item Implizite Kapitalkosten als Opportunitätskosten. Eigentümer erwarten Redite aus Dividenden und Kurssteigerungen des Aktienkurses auch wenn nicht fix verträglich vereinbart
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Weighted Average Cost of Capital (WACC)}
+\begin{definition}
+    [WACC] dient zur Diskontierung erwarteter Gewinne/CashFlows. Besteht aus dem Quotient der erwarteten Renditen von FK-Eigentümer (FK * zinssatz) und EK-Eigentümer (EK * zinssatz) in Bezug auf das Gesamtekapital. Somit muss für jede Einheit gewonnenes Kapital so viel wieder an Eigentümer als Rendite wieder gezahlt werden
+    \begin{equation}
+        WACC = \frac{EK * k_{EK} + FK * k_{FK} }{GK}
+    \end{equation}
+\end{definition}
+
+Optimierung der Kapitalstruktur hat das Ziel die Kapitalkosten so niedrig wie möglich zu halten.
+
+\subsection{Ertragswertmethode}
+
+\begin{definition}
+    [Ertragswertmethode] Gewinne werden als Diskontierten Cashflows mit Bezug auf die Zukunft berechnet
+\end{definition}
+
+\subsubsection{Vorgehen}
+\begin{itemize}
+    \item Ertragswert (Present Value des Unternehmens) als ewige Rente abstrahiert 
+    \item Brutto/Nettoansatz
+    \begin{itemize}
+        \item Ertragswert netto direkt: $\frac{Reingewinn}{k_{EK}} = Eigenkapital$ 
+    \end{itemize}
+    \item Ertragswertbrutto: $\frac{Ertragswert + FKZinsen}{WACC} = Gesamtkapital = FK + EK $
+    \item Ertragswertnetto: $\frac{Ertragswert + FKZinsen}{WACC} - FK = EK$
+\end{itemize}
+
+\begin{definition}
+    [Goodwill] Differenz zwischen Ertragswert und Substanzwert des Unternehmens. Sämtliche \textit{immateriellen} Werte die nicht bilanzierbar sind.
+\end{definition}
+
+\subsection{Discounted Cashflow Methode (DCF)}
+
+
+
+\begin{definition}
+    [DCF] Diskontierung aller zukünftigen Free-Cash-FLows nach Abzug von Investitionssumme. FreeCashFlow ist jener Cashflow, der verfügbar ist nach allen notwendigen Erhaltungsnvestitionen. 
+\end{definition}
+
+\subsubsection{Berechnung einzelner FCFs}
+\begin{itemize}
+    \item Gewinn vor Zinsen (Reingewinn + Zinsen)
+    \item + Abschreibungen
+    \item - Veränderung des operativen Nettoumlaufvermögens
+    \item - Investitionen ins Anlagevermögen (wird abgezogen weil nicht \textit{frei} Cashflows sind, sondern notwendig für erhalten der Maschinen/Reinvestition in Kosten)
+\end{itemize}
+
+\subsubsection{Vorgang}
+\begin{enumerate}
+    \item Freie Cashflows berechnen 
+    \item FCFs diskontieren 
+    \item ewige FCFs berechnen RBF 
+    \item Diskontieren der ewigen Rente mit dem Jahr ab dem es beginnt - 1 rechnen
+    \item Unternehmenswertbrutto = Summe diskontierten FCFs + diskontierte ewige Rente 
+    \item Unternehmenswertnetto (EK) = Brutto - FK Wert
+\end{enumerate}
