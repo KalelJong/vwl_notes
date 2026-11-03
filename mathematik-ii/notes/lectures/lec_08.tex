@@ -1,0 +1,70 @@
+% !TEX root = ../main.tex
+\lecture{8}{2026-11-02}{Differentialquotient}
+\begin{theorem}
+    Ist eine Funktion Differenzierbar ist sie auch stetig. Die Umkehrung ist aber nicht war, eine stetige Funktion mit Knicken ist nicht differenzierbar.
+\end{theorem}
+
+\subsection{Differenzialquotient}
+
+\begin{definition}
+    [Differentialquotient] Für eine Funktion $f$ ist der Differentialquotient an der Stelle $x_0$ (sofern der Grenzwert existiert) definiert als
+    \[
+        f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}.
+    \]
+\end{definition}
+
+\subsubsection{Ableitung der Umkehrfunktion}
+\begin{theorem}
+    [Ableitung Umkehrfunktionen] wenn eine Funktion bijektiv und x0 in D differenzierbar ist mit f(x0) = y0
+    \[
+        (f^{-1})'(y_0) = (f^{-1})'f(x_0) = \frac{1}{f'(x0)}
+        \]
+
+        Aufgrund der Symmetrie der original und Umkehrfunktionen kann man ohne die Ableitung der Umkehrfunktion oder die Umkehrfunktion selbst zu berechnen die Steigung eines Punkts auf der Umkehrfunktion bestimmen. In dem man die Ableitung der original Funktion die y und x werte tauscht.
+\end{theorem}
+
+\subsubsection{Kettenregel}
+
+\begin{theorem}
+    [Kettenregel] bei Kompositionen besteht der Differentialquotient aus:
+    \[
+        h(x) = f(g(x)) \\ 
+        h'(x) = f'(g(x)) \cdot g'(x)
+    \]
+    Beispiel $e^6x$ besteht aus $f(x) = e^x$ und $g(x) = 6x$. Ableitung also $h'(x) = 6e^{6x}$
+\end{theorem}
+
+\subsubsection{Ableitung abschnittsweise definierter Funktionen}
+\begin{theorem}
+    Eine abschnittsweise definiert Funktion ist differenzierbar, wenn sie stetig ist und die Grenzwerte der Ableitungen der Abschnitte gleich sind.
+\end{theorem}
+
+\begin{definition}
+    [Stetig differenzierbar] wenn die n-te Ableitung von f stetig auf der Definitionsmenge ist. Wenn eine Funktion immer weiter differenzierbar ist, heisst sie \textbf{glatt}.
+\end{definition}
+
+
+\subsubsection{Mittelwertsatz}
+
+\begin{theorem}
+    Wenn eine Funktion auf [a,b] stetig und auf (a,b) differenzierbar ist, gibt es mindestens ein $x_0$ dessen Ableitung dem Differenzenquotient a-b entspricht. Die Sekante wird so verschoben, sodass es zur Tangente eines Punkts im Interval wird.
+    Wenn f(a) und f(b) gleich sind, und die A-B-Sekante also 0 Steigung hat, muss eine Tangente im Interval mit Steigung 0 existieren.
+\end{theorem}
+
+\subsubsection{l'Hopital Regel}
+
+\textbf{Motivation}: bei einer Komposition, die bei x0 nicht definiert sind, aber deren Elemente schon, kann der Wert 
+
+\begin{definition}
+    [l'Hopital]   
+    \[
+    \lim_{x \rightarrow c} \frac{f(x)}{g(x)} =  \lim_{x \rightarrow c} \frac{f'(x)}{g'(x)}
+    \]
+    Für jeden Logarithmus  und  exponential Funktionen im Nenner, ist exponential immer schneller wachsend, sodass Grenzwert 0 ist.
+    Mit Voraussetzungen:
+    \begin{itemize}
+        \item g(x) nicht gleich 0
+        \item und $\frac{f'(x)}{g'(x)}$ existiert und ergibt einen eigentlichen oder uneigentlichen Grenzwert
+    \end{itemize}
+    Gilt für nicht definierte Stelle, sowie einseitige Grenzwerte.
+\end{definition}
