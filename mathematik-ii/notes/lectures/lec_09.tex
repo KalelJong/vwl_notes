@@ -1,0 +1,80 @@
+% !TEX root = ../main.tex
+\lecture{9}{2026-11-09}{Woche 9}
+
+\subsection{Eigenschaften}
+\begin{definition}
+    [Monotonie] ähnlich wie bei Folgen, und Reihen. (Nicht fallend). Für alle $x_1 < x_2$ mit $x1,x2$ in I teilmenge von D
+    \begin{itemize}
+        \item $f(x1) < = f(x2)$ heisst f monoton steigend auf I (Kann auch konstant sein)
+        \item $f(x1) < f(x2)$ heisst streng monoton steigend
+    \end{itemize}
+\end{definition}
+
+\begin{theorem}
+    [Monotoniekriterium] in einem Interval I (a,b), wobei an allen Stellen stetig und differenzierbar im Interval.
+    \begin{itemize}
+        \item $f'(x) >= 0 $ für alle x in  $I <=> f$ monoton steigend auf I
+        \item $f'(x) <= 0 $ für alle x in $I <=> f$ monoton fallend auf I 
+        \item $ f'(x) > $ 0 für alle x in $I => f$ streng monoton steigend (\textbf{keine äquivalenz wegen$ x^3 $ und $x^4$})
+    \end{itemize}
+\end{theorem}
+
+\begin{theorem}
+    [Umkehrfunktion stetiger Funktionen] f: D $\rightarrow$ f(D) (per definition ist Wertebereich gleich Zielbereich)
+\end{theorem}
+
+\begin{theorem}
+    [Monotonie Summe, Max und Min] 
+    \begin{itemize}
+        \item Wenn f, g (streng) monoton steigend/fallend sind f +g, max{f,g} und min{f,g} auch (streng) monoton steigend/fallend
+    \end{itemize}
+\end{theorem}
+
+\begin{theorem}
+    [Monotonie bei Transformationen] Stauchung/Streckung oder links/rechts oben/unten Verschiebungen ändern die Monotonie nicht. Nur Spiegelungen kehren die Monotonie um.
+    \[
+    f(ax + b)  wenn a Vorzeichen wechsel => y-achse Spiegelung \\
+     cf(x)+d wenn c +/- vorzeichen wechsel => x-achse Spiegelung
+    \] 
+\end{theorem}
+
+\begin{theorem}
+    [Komposition monotoner Funktionen] 
+    \begin{itemize}
+        \item Wenn f und g beide (streng) monoton fallend/steigend dann f(g(x)) auch 
+        \item Verschiedene Monotonien =>  monoton fallend  (+ * - => -)
+    \end{itemize}
+\end{theorem}
+
+\begin{definition}
+    [Konvexität] 
+    \begin{itemize}
+        \item Konvex
+        \begin{itemize}
+            \item wenn Menge der Punkte oberhalb des Graphen konvex ist, sodass Verbindung zweier Punkte auf dem Graphen über eine Linie verknüpft werden können, deren Punkte alle in der Menge oberhalb des Graphen gehören.
+            \item Um zu überprüfen müssen x Koordinaten von konvex Kombinationen, wenn eingesetzt einen y ergeben der unter dem y-konvexkombinationspunkt liegt 
+            \begin{equation}
+                \alpha f(x_1) 
+            \end{equation}
+        \end{itemize}
+        \item Konkav gleich Konvex aber Menge unterhalb
+        \item \textbf{affin lineare funktionen können konvex und konkav sein}, unten und oben entstehen konvexe Mengen
+    \end{itemize}
+\end{definition}
+
+\begin{theorem}
+    [Konvexität/Konkavitätskriterium 1. Ordnung] 
+    \begin{itemize}
+        \item Konvex wenn Steigung der Tangente/Ableitung monoton steigend (umkreist die Funktion)
+        \item oder äquivalent: Funktionswert immer grösser/gleich als Wert der Tangentenfunktion einer Stelle x0 an der Stelle x 
+        \item Konkav wenn obige Bedingungen umgekehrt werden 
+    \end{itemize}
+\end{theorem}
+
+\begin{theorem}
+     [Konvexität/Konkavitätskriterium 2. Ordnung]  Anhand der Monotoniekriterien der Ableitungen 
+     \begin{itemize}
+        \item Wenn n-te Ableitung > 0 dann  n-1te-ableitung monoton steigend und n-2te funktion konvex 
+     \end{itemize}
+     Nur anwendbar wenn f an allen stellen differenzierbar ist. Differenzierbar heisst f'(x0)rechts und links gleich
+\end{theorem}

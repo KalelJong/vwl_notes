@@ -1,0 +1,151 @@
+% !TEX root = ../main.tex
+\lecture{8}{2026-11-09}{Leverage Effekt und Banking}
+
+\section{Leverage Effekt}
+
+\begin{itemize}
+    \item Abhängigkeit der EK-Rendite vom Verhältnis FK/EK. Untervoraussetzung: 
+    \begin{itemize}
+        \item Gesamtkapitalrendite bleibt konstant
+        \item Keinen Einfluss auf Operative Geschäft
+        \item FK-Zins konstant
+    \end{itemize}
+    \item Reingewinn = $ r_ek * EK$
+\end{itemize}
+
+\[
+    r_{ek} = r_{gk} + \frac{FK}{EK}(r_{gk} - k_{fk})
+\]
+
+\begin{itemize}
+    \item Hebel
+    \begin{itemize}
+        \item $\frac{FK}{EK}$, je grösser FK in Verhältnis zu EK, desto grösser die Rendite
+        \item jedoch nur während die Gesamtkapitalrendite grösser ist als die FK-kosten
+    \end{itemize}
+\end{itemize}
+
+\subsection{Rechenbeispiele}
+
+\begin{itemize}
+    \item 100\% EK = 300
+    \begin{itemize}
+        \item Gewinn Brutto => Ertrag - Aufwand = 30
+        \item FK-Zinsen = 0 
+        \item Reingewinn nach Zinsen = 30
+        \item $r_ek = 30/300 = 10\% = r_gk $
+    \end{itemize}
+     \item 50\% FK = 150
+     \begin{itemize}
+         \item Gewinn Brutto => Ertrag - Aufwand = 30
+         \item FK-Zinsen = 6\% (Gegeben) * 150 = 9
+         \item Reingewinn nach Zinsen = 30 -9 = 21
+         \item$ r_ek = 21/150 = 14\%  $
+         \item Hebel hat positiver Effekt weil$ r_gk > r_fk  10\% > 6\%$
+     \end{itemize}
+       \item 67\% FK = 300/100 * 67 = 200
+     \begin{itemize}
+         \item Hebel hat auch positiver Effekt weil $r_gk > r_fk $
+     \end{itemize}
+\end{itemize}
+
+\subsubsection{Fallunterscheidung}
+
+Gewinn Schlechter/Guter/Optimaler Fall: 9 / 30 / 51
+
+\begin{itemize}
+    \item 100\% EK = 300
+    \begin{itemize}
+        \item $3\% / 10\% / 17\%$
+        \item Avg 10\%
+        \item Streuung vom Durchschnitt +/- 7\%
+    \end{itemize}
+    \item 50\% = 150
+    \begin{itemize}
+        \item FK Zinsen = 9 
+        \item Reingewinn 0 / 21 / 42
+        \item $r_ek = 0\% / 14\% / 28\%$
+        \item $Avg 14\%$
+        \item Streuung vom Durchschnitt +/- 14\%
+    \end{itemize}
+    \item 67\% Fk
+    \begin{itemize}
+         \item FK Zinsen = 12 
+        \item Reingewinn -3 / 21 / 42
+        \item $r_ek = 0\% / 14\% / 28\%$
+        \item Avg 14\%
+        \item Streuung vom Durchschnitt +/- 21\%
+    \end{itemize}
+    \item Insgesamt ergeben sich mit steigendem FK zu EK höhere durchschnittliche Renditen aber grössere Schwankungen/Risiko, dass die erzielte Rendite beim schlechten/mittleren Fall sogar negativ sein kann ($r_gk < r_ek$)
+\end{itemize}
+
+\section{Intro Banking}
+Grundsätzlich besteht die primäre lukrative Tätigkeit von Banken aus dem langfristigen Finanzieren von Hypotheken, Unternehmenskredite aus kurzfristigen Anlagen von Privatpersonen.
+\subsection{Grundproblematiken}
+\begin{itemize}
+    \item Informationsproblem
+    \begin{itemize}
+        \item Vermittlung von Kapitalgeber und -nehmer (Umverteilung des Kapitals der Gesellschaft, um Kapitalumlauf zu sichern)
+    \end{itemize}
+    \item Fristigkeitsproblem
+    \begin{itemize}
+        \item Langfristige Kreditvergabe mit kurzfristigen Anlagen
+    \end{itemize}
+    \item Losengrössenproblem
+    \begin{itemize}
+        \item Viele kleine Bezüge zu grossen Kapitalblöcke (Bankrun)
+    \end{itemize}
+    \item Risikoproblem
+    \begin{itemize}
+        \item Private Anleger möchten Sicherheit während die Bank das Geld unter Risiken einsetzen muss 
+    \end{itemize}
+\end{itemize}
+
+\subsection{Funktionen von Banken}
+Banken sind Finanzintermediäre die folgendes betreiben:
+\begin{itemize}
+    \item Kreditgeschäft
+    \begin{itemize}
+        \item Losgrössentransformationen (Aus kleinen -> grossen Kapitalmengen)
+        \item Fristentransformation 
+        \item Risikentransformation 
+    \end{itemize}
+    \item Verwahrung und Anlage Wertgegenstände
+    \item Geldwechsel und Zahlungsverkehr (Operationen)
+    \item Weitere interne Aufgaben:
+    \begin{itemize}
+        \item Risikomanagement 
+        \item Monitoring
+        \item Life-cycle Capital Allocation (Optimale Verteilung von Kapital zwischen Privatpersonen und )
+        \item Transmission der Geldpolitik
+        \begin{itemize}
+            \item Zentralbanken bestimmen Geldpolitische Massnahmen (Zinssätze) die über die Privatbanken vermittelt werden 
+        \end{itemize}
+    \end{itemize}
+\end{itemize} 
+\footnote{"Weil Bank Risiken eingeht, muss sie entschädigt werden" reine Apologetik, es wird nicht versucht den Mechanismus zu erklären, der es möglich macht "endlos" aus Wert mehr Wert zu machen.}
+
+\subsection{Akteure des Schweizerischen Finanzplatzes: SNB}
+
+\subsubsection{Funktionen}
+\begin{itemize}
+    \item Liquiditätsversorgung
+    \item Bargeldversorgung
+\item Finanzstabilität (Inflation, Krisenverhinderung)
+\item Verwaltung Währungsreserven
+\end{itemize}
+\subsubsection{Instrumente}
+\begin{itemize}
+    \item Festlegung des Leitzinses
+    \item Offenmarktoperationen zur Liquiditätssteuerung
+    \item Verzinzung 
+    \item Devisenmarktinterventionen
+\end{itemize}
+
+\subsubsection{Repurchase Agreement (Repo)}
+\begin{itemize}
+    \item Primäres Instrument zur Steuerung der Geldmenge
+    \item Wertpapiere (Repo) werden gegen einen Zinsatz durch SNB ausgestellt
+    \item 
+\end{itemize}
+
