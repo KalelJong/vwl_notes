@@ -1,0 +1,74 @@
+% !TEX root = ../main.tex
+\lecture{10}{2026-11-16}{Taylorpolynome}
+
+\subsubsection{Konvexitätserhaltung}
+\begin{definition}
+    [Konvexitätserhaltend] sind f und g auf \textit{I}
+    \begin{itemize}
+        \item (streng) konvex, sind f + g und max\{f,g\} auf I
+        (streng) konvex
+        \item (streng) konkav, ist f + g und min\{f,g\} auf I
+        (streng) konkav
+        \item max einer konvexen/konkaven und einer streng konvexen/konkaven
+        Funktion ist auch konvex/konkav aber nicht streng
+        konvex
+    \end{itemize} 
+\end{definition} 
+
+
+\subsubsection{Wendepunkt}
+\begin{definition}
+    [Wende und Sattelpunkt] ist eine Funktion auf einem
+    Interval konvex und auf dem folgenden konkav muss es am
+    Schnittpunkt dieser Intervale einen Wendepunkt oder
+    Sattelpunkt befinden. Sattelpunkt wenn f differenzierbar: $f'(x_0) = 0$
+\end{definition}
+
+\begin{theorem}
+    [Kriterium Wendepunkt] wenn f einen Wendepunkt hat und zweimal differenzierbar in
+    $x_0$ gilt:$f''(x_0) = 0 $ aber wenn f''(x) = 0 gilt
+    \textbf{nicht} x als Wendepunkt (Bsp. $x^4$)
+\end{theorem}
+
+\subsubsection{Symmetrie und Periodizität}
+
+\begin{definition}
+    [Symmetrie] Gilt $f: D \rightarrow Z und alle x \in D$
+    \begin{itemize}
+        \item f(-x) = f(x) spiegelsymmetrisch um y-achse
+        \item f(-x) = -f(x) punktsymmetrisch um Ursprung
+        \item f(x) = f(x + T) mit T > 0 ist periodisch mit
+        Periode T
+    \end{itemize} 
+
+\end{definition}
+
+\subsection{Taylor-Polynom}
+Besteht aus dem Versuch eine Funktion über ihre Werte zu
+approximieren, in dem man mit einer Tangente an einem bekannten
+Punkt anfängt (Wert an der Ursprungsfunktionstelle ist gleich
+Tangentenstelle und der ersten Ableitung). Danach ist eine
+Funktion gesucht die weiterhin diese Eigenschaften hat, aber
+auch die 2. Ableitung bis n-te Ableitung entspricht. So
+Annäherungsweise wird die Ursprungsfunktion über Polynome
+hergestellt mit einem minimierenden Fehler (r). Also wenn
+Funktionsvorschrift unbekannt aber Eigenschaften bekannt kann
+diese über Taylorpolynome 
+
+\begin{definition}
+    [Taylor-Polynom mit Restglied] Sei $f$ $(n+1)$-mal
+    differenzierbar auf einem Intervall, das $x_0$ und $x$ enthält.
+    Das Taylor-Polynom von $f$ zum Entwicklungspunkt $x_0$ und zur
+    Ordnung $n$ ist
+    \[
+        T_n(x) = \sum_{k=0}^{n} \frac{f^{(k)}(x_0)}{k!}(x-x_0)^k.
+    \]
+    Nach dem Satz von Taylor gilt
+    \[
+        f(x) = T_n(x) + R_n(x), \qquad
+        R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1},
+    \]
+    wobei $\xi$ zwischen $x_0$ und $x$ liegt. $R_n$ heisst
+    Restglied in der Lagrange-Form.
+\end{definition}
+ 
